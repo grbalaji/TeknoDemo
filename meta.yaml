@@ -1,9 +1,9 @@
 version: 1.0.0
+publisher: theiaide
 editors:
   - id: eclipse/che-theia/next
     title: Eclipse Theia development version.
     displayName: theia-ide
-    publisher: theiaide
     description: Eclipse Theia, get the latest release each day.
     icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
     repository: https://github.com/eclipse-che/che-theia
