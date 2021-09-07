@@ -3,6 +3,7 @@ editors:
   - id: eclipse/che-theia/next
     title: Eclipse Theia development version.
     displayName: theia-ide
+    publisher: theiaide
     description: Eclipse Theia, get the latest release each day.
     icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
     repository: https://github.com/eclipse-che/che-theia
@@ -19,7 +20,6 @@ editors:
           discoverable: false
     containers:
       - name: theia-ide
-        publisher: theiaide
         image: "https://hub.docker.com/r/theiaide/theia"
         mountSources: true
         ports:
