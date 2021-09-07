@@ -19,6 +19,7 @@ editors:
           discoverable: false
     containers:
       - name: theia-ide
+        publisher: theiaide
         image: "https://hub.docker.com/r/theiaide/theia"
         mountSources: true
         ports:
