@@ -1,0 +1,26 @@
+version: 1.0.0
+editors:
+  - id: eclipse/che-theia/next
+    title: Eclipse Theia development version.
+    displayName: theia-ide
+    description: Eclipse Theia, get the latest release each day.
+    icon: https://raw.githubusercontent.com/theia-ide/theia/master/logo/theia-logo-no-text-black.svg?sanitize=true
+    repository: https://github.com/eclipse-che/che-theia
+    firstPublicationDate: "2021-01-01"
+    endpoints:
+      - name: "theia"
+        public: true
+        targetPort: 3100
+        attributes:
+          protocol: http
+          type: ide
+          secure: true
+          cookiesAuthEnabled: true
+          discoverable: false
+    containers:
+      - name: theia-ide
+        image: "https://hub.docker.com/r/theiaide/theia"
+        mountSources: true
+        ports:
+          - exposedPort: 3100
+        memoryLimit: "512M"
